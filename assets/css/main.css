@@ -588,10 +588,11 @@ h6 {
 }
 
 .page-title .heading {
-  padding: 160px 0 80px 0;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  
+  padding: 80px 0 0px 0;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%); 
 }
+
+
 
 .page-title .heading h1 {
   font-size: 38px;
@@ -630,7 +631,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 20px 0;
   scroll-margin-top: 100px;
   overflow: clip;
 }
@@ -647,7 +648,7 @@ section,
 # Global Section Titles
 --------------------------------------------------------------*/
 .section-title {
-  padding-bottom: 60px;
+  padding-bottom: 0;
   position: relative;
 }
 
@@ -1003,7 +1004,7 @@ section,
   color: var(--heading-color);
   font-size: 26px;
   font-weight: 700;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 
@@ -1475,3 +1476,112 @@ section,
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
+
+
+.feed-platform-card {
+  background: #111;
+  padding: 16px;
+  border-radius: 12px;
+  height: 100%;
+}
+
+.feed-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.feed-subtitle {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 12px;
+}
+
+.feed-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr); 
+  gap: 15px;
+  align-items: stretch;
+}
+
+.feed-grid img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.feed-grid img:hover {
+  transform: scale(1.05);
+}
+
+.feed-title a {
+  color: inherit;          /* pakai warna teks biasa */
+  text-decoration: none;   /* hilangkan garis bawah */
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.feed-title a:hover {
+  color: #16a34a;          /* bisa disesuaikan warna brand */
+}
+
+
+
+/* baru */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 30px;
+  align-items: stretch;
+}
+
+/* card besar */
+.portfolio-card {
+  background: #0f0f0f;
+  border-radius: 18px;
+  padding: 16px;
+  height: 350px;               /* semua kolom sama tinggi */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* judul */
+.portfolio-card h3 {
+  color: white;
+  margin: 0;
+}
+
+.portfolio-card p {
+  color: #aaa;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+/* area grid foto */
+.image-grid {
+  flex: 1;                     /* isi sisa ruang */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+              /* kalau foto banyak → scroll */
+  padding-right: 5px;
+}
+
+/* gambar */
+.image-grid img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;           /* crop otomatis */
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.image-grid img:hover {
+  transform: scale(1.05);
+}
+

@@ -1,0 +1,58 @@
+/* FORCE DARK CONTACT PAGE */
+
+body.contact-page {
+  background: #0b0b0b !important;
+}
+
+#contact {
+  background: #0b0b0b !important;
+}
+
+.contact .php-email-form {
+  background: #111 !important;
+  padding: 35px !important;
+  border-radius: 20px !important;
+  box-shadow: 0 0 50px rgba(0,0,0,0.8) !important;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  background: #000 !important;
+  color: #fff !important;
+  border: 1px solid #333 !important;
+}
+
+.contact .php-email-form input::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color: #aaa !important;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: #18d26e !important;
+  box-shadow: 0 0 0 2px rgba(24,210,110,.3) !important;
+}
+
+.contact .php-email-form button {
+  background: linear-gradient(135deg,#18d26e,#1ecb9f) !important;
+  border-radius: 30px !important;
+  border: none !important;
+  color: #000 !important;
+  padding: 12px 35px !important;
+  font-weight: 700 !important;
+}
+
+.contact .php-email-form button:hover {
+  transform: scale(1.05);
+}
+
+.contact .info-item {
+  background: #111 !important;
+  color: #fff !important;
+  border-radius: 15px !important;
+}
+
+.contact .info-item h3,
+.contact .info-item p {
+  color: #fff !important;
+}
